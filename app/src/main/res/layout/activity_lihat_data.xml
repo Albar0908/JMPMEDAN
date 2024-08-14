@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+  <!-- ImageView untuk logo atau gambar -->
+  <ImageView
+      android:id="@+id/imageViewLogo"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:src="@drawable/baseline_mood_24"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/inputnama"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginTop="48dp"
+      android:contentDescription="Logo" />
+
+  <!-- EditText untuk Username -->
+  <EditText
+      android:id="@+id/inputnama"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:hint="Masukkan Nama"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+      app:layout_constraintWidth_percent="0.8" />
+
+  <!-- EditText untuk Password -->
+  <EditText
+      android:id="@+id/inputumur"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:hint="Masukkan Umur"
+      android:inputType="textPassword"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/inputnama"
+      app:layout_constraintWidth_percent="0.8" />
+
+
+  <EditText
+      android:id="@+id/inputmotto"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:hint="Masukkan Moto"
+      android:inputType="textPassword"
+      android:minHeight="48dp"
+      android:padding="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/inputumur"
+      app:layout_constraintWidth_percent="0.8" />
+
+  <!-- Button untuk Login -->
+  <Button
+      android:id="@+id/buttonSimpan"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Simpan"
+      app:layout_constraintTop_toBottomOf="@id/inputmotto"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintWidth_percent="0.8"
+      android:layout_marginTop="24dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
